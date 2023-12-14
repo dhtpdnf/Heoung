@@ -1,36 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
+<head>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .wrap {
+            width: 100%;
+            margin: auto;
+        }
+
+        .intro_bg {
+            background-color: #fff;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+        }
+
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .intro_text {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .intro_text h1 {
+            color: #f2f2f2;
+        }
+
+        .contents1 {
+            color: #555;
+        }
+
+        .nutritional-info {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+        }
+
+        .nutritional-info h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .nutritional-info p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .footer div:first-child {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
     <div class="wrap">
-      <div class="intro_bg">
-        <div class="header" id="link_header">
-          <div class="searchArea">
-            <form>
-              <input type="search" placeholder="search">
-              <span>검색</span>
-            </form>
-          </div>
-          <ul class="nav">
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="home.html","#main_text0">ABOUT</a></li>
-            <li><a href="home.html","#main_text1">SERVICE</a></li>
-            <li><a href="home.html","#main_text2">CONTACT</a></li>
-          </ul>
-        </div>
+        <div class="intro_bg">
+            <div class="header" id="link_header">
+                <ul class="nav">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="home.html">ABOUT</a></li>
+                    <li><a href="home.html">SERVICE</a></li>
+                    <li><a href="home.html">CONTACT</a></li>
+                </ul>
+            </div>
 
-        <div class="intro_text">
-            <h1>영양성분</h1>
-            <h4 class="contents1">100g의 영양성분 입니다.
+            <div class="intro_text">
+                <h1>후쿠시마 오징어</h1>
+                <h4 class="contents1">100g의 영양성분입니다.</h4>
 
-                <div style="color: white ;">열량 87kcal</div>
-                
-                
+                <div class="nutritional-info">
+                    <h2>영양 성분</h2>
+                    <p>열량: 87kcal</p>
+                    <p>탄수화물: 0g</p>
+                    <p>단백질: 18g</p>
+                    <p>지방: 1g</p>
+                    <p>콜레스테롤: 233mg</p>
+                    <p>칼슘: 44mg</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                
-          </div>
+    <div class="footer">
+        <div>LOGO</div>
+        <div>
+            CEO. 승종 <br>
+            Addr. 전라북도 전주시 완산구 전주비전대 성실관 5층 고객상담실 Fax/Tel. <br>
+            063 - 228 -1912~5 <br>
+            COPYRIGHT 2023. Suck-Yeol. ALL RIGHT RESERVED.
         </div>
-        </div>
+    </div>
+</body>
+</html>

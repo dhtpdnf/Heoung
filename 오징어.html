@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .board {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .post-list {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .post-list th, .post-list td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .post-list th {
+            background-color: #f2f2f2;
+        }
+
+        .post-content {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .page-nav {
+            text-align: center;
+        }
+
+        .page-nav a {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .page-nav .page {
+            background-color: #f2f2f2;
+        }
+
+        .page-nav a:hover {
+            background-color: #ddd;
+        }
+
+        .page-nav .prev,
+        .page-nav .next {
+            font-weight: bold;
+        }
+    </style>
+    <title>게시판</title>
+</head>
+<body>
+    <div class="board">
+        <h1><a href="home.html" class="home-btn">Home</a></h1>
+        <h1>1:1 문의내역</h1>
+        <table class="post-list">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>날짜</th>
+                    <th>제목</th>
+                    <th>조회수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2023-12-07</td>
+                    <td><a href="#post1">후쿠시마 오징어 먹으면 안죽나요?</a></td>
+                    <td>11</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <div id="post1" class="post-content">
+            <h2>후쿠시마 오징어 먹으면 안죽나요?</h2>
+            <p>날짜: 2023-12-07</p>
+            <p>조회수: 11</p>
+            <p>문의 내용: 오징어가 싸길래 사고 싶은데, 건강에 해롭진 않나요?</p>
+        </div>
+
+        <div class="page-nav">
+            <a href="#" class="prev">이전</a>
+            <a href="#" class="page">1</a>
+            <a href="#" class="page">2</a>
+            <a href="#" class="page">3</a>
+            <a href="#" class="next">다음</a>
+        </div>
+    </div>
+</body>
+</html>
